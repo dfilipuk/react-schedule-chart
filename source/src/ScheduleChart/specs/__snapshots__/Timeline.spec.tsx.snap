@@ -1,0 +1,662 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timeline Component Snapshot should not render current day marker if current day not within timeline 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render current day marker if current day within timeline 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+.c1 {
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 9 / span 1;
+  border-right: 1px dashed #606d7f;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render several groups of several intersecting tasks 1`] = `
+.c1 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: Gold;
+  grid-area: 1 / 1 / 2 / 6;
+}
+
+.c4 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: LimeGreen;
+  grid-area: 1 / 7 / 2 / 13;
+}
+
+.c2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  background-color: GoldenRod;
+}
+
+.c5 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 9 / span 1;
+  background-color: ForestGreen;
+}
+
+.c3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+}
+
+.c6 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 11 / span 1;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="timeline-bar"
+    />
+    <div
+      class="c2"
+      data-testid="timeline-start-marker"
+    />
+    <div
+      class="c3"
+      data-testid="timeline-end-marker"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-check-circle fa-w-16 fa-sm "
+        color="GoldenRod"
+        data-icon="check-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      class="c4"
+      data-testid="timeline-bar"
+    />
+    <div
+      class="c5"
+      data-testid="timeline-start-marker"
+    />
+    <div
+      class="c6"
+      data-testid="timeline-end-marker"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-check-circle fa-w-16 fa-sm "
+        color="ForestGreen"
+        data-icon="check-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render several not intersecting tasks 1`] = `
+.c1 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: MediumVioletRed;
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.c3 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: Gold;
+  grid-area: 1 / 4 / 2 / 8;
+}
+
+.c4 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: LimeGreen;
+  grid-area: 1 / 10 / 2 / 13;
+}
+
+.c2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="timeline-bar"
+    />
+    <div
+      class="c2"
+      data-testid="timeline-end-marker"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-check-circle fa-w-16 fa-sm "
+        color="Purple"
+        data-icon="check-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      class="c3"
+      data-testid="timeline-bar"
+    />
+    <div
+      class="c4"
+      data-testid="timeline-bar"
+    />
+  </div>
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render several tasks which complete on single day 1`] = `
+.c1 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: MediumVioletRed;
+  grid-area: 1 / 5 / 2 / 13;
+}
+
+.c2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 12 / span 1;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="timeline-bar"
+    />
+    <div
+      class="c2"
+      data-testid="timeline-end-marker"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-check-circle fa-w-16 fa-sm "
+        color="Purple"
+        data-icon="check-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render several tasks which start and complete on single day 1`] = `
+.c1 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: Gold;
+  grid-area: 1 / 3 / 2 / 12;
+}
+
+.c2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 8 / span 1;
+  background-color: GoldenRod;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="timeline-bar"
+    />
+    <div
+      class="c2"
+      data-testid="timeline-start-marker"
+    />
+  </div>
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render several tasks which start on single day 1`] = `
+.c1 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: Gold;
+  grid-area: 1 / 5 / 2 / 13;
+}
+
+.c2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 5 / span 1;
+  background-color: GoldenRod;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="timeline-bar"
+    />
+    <div
+      class="c2"
+      data-testid="timeline-start-marker"
+    />
+  </div>
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render single active multiday task 1`] = `
+.c1 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: LimeGreen;
+  grid-area: 1 / 3 / 2 / 11;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="timeline-bar"
+    />
+  </div>
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render single active one day task 1`] = `
+.c1 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: Gold;
+  grid-area: 1 / 7 / 2 / 8;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="timeline-bar"
+    />
+  </div>
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render single completed multiday task 1`] = `
+.c1 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: MediumVioletRed;
+  grid-area: 1 / 10 / 2 / 15;
+}
+
+.c2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 14 / span 1;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="timeline-bar"
+    />
+    <div
+      class="c2"
+      data-testid="timeline-end-marker"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-check-circle fa-w-16 fa-sm "
+        color="Purple"
+        data-icon="check-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render single completed one day task 1`] = `
+.c1 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: MediumVioletRed;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.c2 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="timeline-bar"
+    />
+    <div
+      class="c2"
+      data-testid="timeline-end-marker"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-check-circle fa-w-16 fa-sm "
+        color="Purple"
+        data-icon="check-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Timeline Component Snapshot should render single group of several intersecting tasks 1`] = `
+.c1 {
+  margin: 10px 2px;
+  border-radius: 4px;
+  background-color: Gold;
+  grid-area: 1 / 1 / 2 / 15;
+}
+
+.c2 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  background-color: GoldenRod;
+}
+
+.c4 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 4 / span 1;
+  background-color: GoldenRod;
+}
+
+.c5 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 10 / span 1;
+  background-color: GoldenRod;
+}
+
+.c3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(14,1fr);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      data-testid="timeline-bar"
+    />
+    <div
+      class="c2"
+      data-testid="timeline-start-marker"
+    />
+    <div
+      class="c3"
+      data-testid="timeline-end-marker"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-check-circle fa-w-16 fa-sm "
+        color="GoldenRod"
+        data-icon="check-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div
+      class="c4"
+      data-testid="timeline-start-marker"
+    />
+    <div
+      class="c5"
+      data-testid="timeline-start-marker"
+    />
+  </div>
+</div>
+`;
