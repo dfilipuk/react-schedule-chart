@@ -1,0 +1,19 @@
+{
+  "name": "Schedule Chart",
+  "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:16-bullseye",
+  "workspaceFolder": "/app",
+  "postCreateCommand": "cd source && yarn",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached",
+  "mounts": [
+    "source=react-schedule-chart-node_modules,target=${containerWorkspaceFolder}/source/node_modules,type=volume"
+  ],
+  "containerEnv": {
+    "CHOKIDAR_USEPOLLING": "false"
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "orta.vscode-jest",
+    "styled-components.vscode-styled-components"
+  ]
+}
