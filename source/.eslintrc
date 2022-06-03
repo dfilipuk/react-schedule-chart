@@ -1,0 +1,23 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": ["react-app", "airbnb-typescript", "prettier", "plugin:import/typescript"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "plugins": ["import", "prettier", "react", "react-hooks"],
+  "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "no-empty": ["error", { "allowEmptyCatch": true }]
+  }
+}
